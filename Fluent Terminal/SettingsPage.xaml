@@ -1,0 +1,107 @@
+<Page
+    x:Class="Fluent_Terminal.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ScrollViewer Padding="40,24">
+        <StackPanel Spacing="24" MaxWidth="1000" HorizontalAlignment="Left" Width="1000">
+            <TextBlock Text="Settings" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,0,0,12"/>
+
+            <!-- Appearance Section -->
+            <StackPanel Spacing="12">
+                <TextBlock Text="Appearance" Style="{ThemeResource SubtitleTextBlockStyle}"/>
+                <Border Background="{ThemeResource LayerFillColorDefaultBrush}" 
+                        BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" 
+                        BorderThickness="1" 
+                        CornerRadius="8" 
+                        Padding="16">
+                    <StackPanel Spacing="16">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="App Theme" FontWeight="SemiBold"/>
+                                <TextBlock Text="Select which app theme to display" Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+                    </StackPanel>
+                            <ComboBox Grid.Column="1" x:Name="ThemeComboBox" Width="200" SelectionChanged="ThemeComboBox_SelectionChanged">
+                                <ComboBoxItem Content="System Default" Tag="Default"/>
+                                <ComboBoxItem Content="Light" Tag="Light"/>
+                                <ComboBoxItem Content="Dark" Tag="Dark"/>
+                            </ComboBox>
+                        </Grid>
+                        
+                        <MenuFlyoutSeparator/>
+                        
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Transparency Effects" FontWeight="SemiBold"/>
+                                <TextBlock Text="Windows-style transparency in the app" Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+                            </StackPanel>
+                            <ToggleSwitch Grid.Column="1" x:Name="TransparencyToggle" IsOn="True" Toggled="TransparencyToggle_Toggled"/>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+
+            <!-- About Section -->
+            <StackPanel Spacing="12">
+                <TextBlock Text="About" Style="{ThemeResource SubtitleTextBlockStyle}"/>
+                <Border Background="{ThemeResource LayerFillColorDefaultBrush}" 
+                        BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" 
+                        BorderThickness="1" 
+                        CornerRadius="8" 
+                        Padding="16">
+                    <StackPanel Spacing="16">
+                        <StackPanel Orientation="Horizontal" Spacing="16">
+                            <Image Source="ms-appx:///Assets/StoreLogo.png" Width="64" Height="64"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Fluency" FontSize="20" FontWeight="Bold"/>
+                                <TextBlock Text="Windows 11 Management Center" Style="{ThemeResource BodyTextBlockStyle}" Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+                                <TextBlock x:Name="VersionText" Text="Version 1.0.0" Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource TextFillColorTertiaryBrush}"/>
+                            </StackPanel>
+                        </StackPanel>
+
+                        <TextBlock Text="Fluency is an open-source utility designed to make Windows 11 management simple, beautiful, and powerful. It combines system monitoring, terminal capabilities, WSL management, and optimization tools into a single, cohesive experience." 
+                                   TextWrapping="Wrap" Style="{ThemeResource BodyTextBlockStyle}"/>
+
+                        <StackPanel Orientation="Horizontal" Spacing="12">
+                            <HyperlinkButton Content="GitHub Repository" NavigateUri="https://github.com/Fluency-App/Fluency"/>
+                            <HyperlinkButton Content="Privacy Policy" NavigateUri="https://github.com/Fluency-App/Fluency/blob/main/PRIVACY.md"/>
+                            <HyperlinkButton Content="Terms of Use" NavigateUri="https://github.com/Fluency-App/Fluency/blob/main/TERMS.md"/>
+                        </StackPanel>
+                    </StackPanel>
+            </Border>
+            </StackPanel>
+
+            <!-- Feedback Section -->
+            <StackPanel Spacing="12">
+                <TextBlock Text="Feedback" Style="{ThemeResource SubtitleTextBlockStyle}"/>
+                <Border Background="{ThemeResource LayerFillColorDefaultBrush}" 
+                        BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" 
+                        BorderThickness="1" 
+                        CornerRadius="8" 
+                        Padding="16">
+                    <StackPanel Spacing="12">
+                        <TextBlock Text="Help us improve Fluency by sending feedback or reporting bugs." Style="{ThemeResource BodyTextBlockStyle}"/>
+                        <Button Content="Send Feedback" Style="{ThemeResource AccentButtonStyle}"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+
+            <TextBlock Text="© 2024 Fluency Team. All rights reserved." 
+                       Style="{ThemeResource CaptionTextBlockStyle}" 
+                       Foreground="{ThemeResource TextFillColorTertiaryBrush}" 
+                       HorizontalAlignment="Center" 
+                       Margin="0,24,0,0"/>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Fluent Terminal (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Fluent Terminal (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

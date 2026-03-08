@@ -62,7 +62,7 @@
                         Padding="16">
                     <StackPanel Spacing="16">
                         <StackPanel Orientation="Horizontal" Spacing="16">
-                            <Image Source="ms-appx:///Assets/StoreLogo.png" Width="64" Height="64"/>
+                            <Image Source="ms-appx:///Assets/Square44x44Logo.png" Width="64" Height="64"/>
                             <StackPanel VerticalAlignment="Center">
                                 <TextBlock Text="Fluency" FontSize="20" FontWeight="Bold"/>
                                 <TextBlock Text="Windows 11 Management Center" Style="{ThemeResource BodyTextBlockStyle}" Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>

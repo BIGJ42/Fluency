@@ -2,7 +2,7 @@ using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using System.Reflection;
 
-namespace Fluent_Terminal
+namespace Fluency
 {
     public sealed partial class SettingsPage : Page
     {

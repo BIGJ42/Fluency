@@ -1,5 +1,5 @@
 <Page
-    x:Class="Fluent_Terminal.TerminalPage"
+    x:Class="Fluency.TerminalPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 

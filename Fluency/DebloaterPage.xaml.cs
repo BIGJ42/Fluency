@@ -6,7 +6,7 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 
 
-namespace Fluent_Terminal
+namespace Fluency
 {
     public sealed partial class DebloaterPage : Page
     {

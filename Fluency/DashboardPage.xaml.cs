@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 
 
-namespace Fluent_Terminal
+namespace Fluency
 {
     public class SystemStatItem
     {

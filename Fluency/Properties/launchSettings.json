@@ -1,9 +1,9 @@
 {
   "profiles": {
-    "Fluent Terminal (Package)": {
+    "Fluency (Package)": {
       "commandName": "MsixPackage"
     },
-    "Fluent Terminal (Unpackaged)": {
+    "Fluency (Unpackaged)": {
       "commandName": "Project"
     }
   }

@@ -1,8 +1,8 @@
 <Page
-    x:Class="Fluent_Terminal.DashboardPage"
+    x:Class="Fluency.DashboardPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Fluent_Terminal">
+    xmlns:local="using:Fluency">
     <ScrollViewer>
         <Grid RowSpacing="16" Padding="0,0,12,16">
             <Grid.RowDefinitions>

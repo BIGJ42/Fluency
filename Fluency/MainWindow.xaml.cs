@@ -2,7 +2,7 @@ using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using System;
 
-namespace Fluent_Terminal
+namespace Fluency
 {
     public sealed partial class MainWindow : Window
     {

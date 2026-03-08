@@ -8,7 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Windows.Storage.Pickers;
 
-namespace Fluent_Terminal
+namespace Fluency
 {
     public class FolderSizeItem
     {

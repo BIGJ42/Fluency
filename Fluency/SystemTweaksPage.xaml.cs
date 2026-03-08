@@ -4,7 +4,7 @@ using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
 
-namespace Fluent_Terminal
+namespace Fluency
 {
     public sealed partial class SystemTweaksPage : Page
     {

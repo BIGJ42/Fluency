@@ -7,7 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Fluent_Terminal
+namespace Fluency
 {
     public sealed partial class StartupAppsPage : Page
     {

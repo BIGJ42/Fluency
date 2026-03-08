@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace Fluent_Terminal
+namespace Fluency
 {
     public sealed partial class MaintenancePage : Page
     {
